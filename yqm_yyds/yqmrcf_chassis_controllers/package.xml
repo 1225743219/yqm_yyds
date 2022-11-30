@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>yqmrcf_chassis_controllers</name>
+  <version>0.0.0</version>
+  <description>The yqmrcf_chassis_controllers package</description>
+  <maintainer email="imoster@todo.todo">imoster</maintainer>
+  <license>TODO</license>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>yqmrcf_common</depend>
+  <depend>yqmrcf_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>hardware_interface</depend>
+  <depend>controller_interface</depend>
+  <depend>forward_command_controller</depend>
+  <depend>realtime_tools</depend>
+  <depend>control_toolbox</depend>
+  <depend>effort_controllers</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>angles</depend>
+
+  <depend>rm_common</depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+    <controller_interface plugin="${prefix}/yqmrcf_chassis_controllers_plugins.xml"/>
+  </export>
+</package>
